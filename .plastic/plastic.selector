@@ -1,0 +1,4 @@
+repository "MarioClone@FullSplashDev@cloud"
+  path "/"
+    br "/main"
+    co "/main"
