@@ -8,20 +8,20 @@ public class Jumper : MonoBehaviour
     public float jumpForce = 6f;
 
     private Rigidbody2D myRigidBody2D;
-    private GroundDetector groundDetector;
+   // private GroundDetector groundDetector;
     // Start is called before the first frame update
     void Start()
     {
         // Needs a rigidbody2d and ground detector attached to the same object
         myRigidBody2D = GetComponent<Rigidbody2D>();
-        groundDetector = GetComponent<GroundDetector>();
+       // groundDetector = GetComponent<GroundDetector>();
     }
 
     public void Jump()
     {
         // As long as we are on the ground
-        if (groundDetector == null || groundDetector.onGround == true)
-        {
+        // if (groundDetector == null || groundDetector.onGround == true)
+       // {
             // Jump
             myRigidBody2D.velocity += new Vector2(0f, jumpForce);
 
@@ -30,6 +30,6 @@ public class Jumper : MonoBehaviour
             {
                 myRigidBody2D.velocity = new Vector2(myRigidBody2D.velocity.x, jumpForce);
             }
-        }
+        //}
     }
 }

@@ -746,6 +746,9 @@ GameObject:
   - component: {fileID: 1910727015}
   - component: {fileID: 1910727017}
   - component: {fileID: 1910727018}
+  - component: {fileID: 1910727019}
+  - component: {fileID: 1910727021}
+  - component: {fileID: 1910727020}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -882,6 +885,48 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 48.620003, y: 50}
   m_Direction: 0
+--- !u!114 &1910727019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910727014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46aebf06fbd95e44ae44ffa78eafd15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mover: {fileID: 0}
+  jumper: {fileID: 0}
+--- !u!114 &1910727020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910727014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7d4061775749648a8f2e0eae081f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 6
+--- !u!114 &1910727021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910727014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a45ecb31155d349a0e4431b6d01636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1910727017}
+  speed: 1
+  dir: {x: 1, y: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
